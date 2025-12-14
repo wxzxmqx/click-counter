@@ -1,0 +1,107 @@
+* {
+    font-family: "Poppins", sans-serif;
+    background-color: #363b4e;
+}
+
+h1, h2 {
+    color: #927fbf;
+    margin: 0;
+}
+
+p {
+    color: #c4bbf0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#timer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#click-section {
+    display: flex;
+    justify-content: center;
+}
+
+.click {
+    border: 2px solid #927fbf;
+    color: #c4bbf0;
+    padding: .2rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.click:hover, #controls button:hover {
+    border: 2px solid #6e608f;
+    color: #928cb4;
+}
+
+.note {
+    font-size: .7rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Stats */
+
+#stats {
+    padding: 2rem 0;
+}
+
+#stats h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+li {
+    border: 3px solid #6e608f;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+
+li span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #927fbf;
+}
+
+#controls {
+    text-align: center;
+}
+
+.durations {
+    padding: 2rem;
+    
+}
+
+#controls button {
+    border: 2px solid #6e608f;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    color: #c4bbf0;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.durations .active {
+    background-color: #6e608f;
+}
+
+footer {
+    text-align: center;
+}
