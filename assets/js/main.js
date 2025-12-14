@@ -89,3 +89,27 @@ durationButtons.forEach (btn => {
         timer.innerHTML = timeLeft;
     })
 })
+
+// Theme Implementation
+
+const changeTheme = document.querySelector('.change-theme');
+const lightThemeBtn = document.querySelector('.light-icon');
+const darkThemeBtn = document.querySelector('.dark-icon');
+
+let isDark = false;
+
+changeTheme.addEventListener('click', () => {
+    const body = document.body;
+    
+    if (isDark) {
+        isDark = false;
+        body.classList = 'light';
+        lightThemeBtn.classList.add('hidden');
+        darkThemeBtn.classList.remove('hidden');
+    } else {
+        isDark = true;
+        body.classList = 'dark';
+        lightThemeBtn.classList.remove('hidden');
+        darkThemeBtn.classList.add('hidden');
+    }
+})
